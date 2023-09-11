@@ -19,13 +19,13 @@ public class Driver {
 		purse1.setDimes(1);
 		purse1.setNickels(1);
 		purse1.setPennies(1);
-		out.println("This is the total amount in the purse");
-		out.println(purse1.cashTotal());
+		out.println("This is the total amount added to the purse " + purse1.cashTotal());
+		
 		
 		Purse purse2 = new Purse();
 		Register register1 = new Register();
 		purse2 = register1.makeChange(purse1, 130);
-		out.println("Returned");
+		out.println("Money being returned:");
 		out.println("Your change is " + purse2.cashTotal()); 
 		out.println("Excess removed from the register " + register1.restock());
 		out.println("Amount in the register before it was emptied " + register1.empty());

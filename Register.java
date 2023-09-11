@@ -1,6 +1,10 @@
 package Naya_Tan_Lab2;
 
+import java.io.PrintStream;
+
 public class Register {
+	
+	PrintStream out = System.out;	
 
 	private final int one100s = 0;
 	private final int twenties = 10;
@@ -143,6 +147,7 @@ public class Register {
 			moneyBack.setDimes(changeList[6]);
 			moneyBack.setNickels(changeList[7]);
 			moneyBack.setPennies(changeList[8]);
+			
 			
 			return moneyBack;
 
